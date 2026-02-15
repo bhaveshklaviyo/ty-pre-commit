@@ -8,3 +8,15 @@
   require_serial: false
   additional_dependencies: []
   minimum_pre_commit_version: "2.9.2"
+
+
+- id: ty-check-ci # new id
+  name: "ty ci"
+  description: "Run ty, an extremely fast Python type checker written in Rust"
+  entry: ty check
+  language: python
+  types_or: [python, pyi]
+  args: []
+  require_serial: false
+  additional_dependencies: []
+  minimum_pre_commit_version: "2.9.2"
